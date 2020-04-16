@@ -17,7 +17,7 @@ You can terminate ping with CTRL-C or send SIGINT to the process. The report wil
 
 ## 3. Example:
 
-Pinging google[.]com normally
+Pinging Google normally
 
     $ ./ping google.com
     Pinging google.com (172.217.6.206) 84 bytes
