@@ -1,16 +1,26 @@
 
-# ping.c - A 24-hrs implementation of Linux's ping for Cloudflare 2020 Internship
+# ping.c - A 24-hour implementation of Linux's ping for Cloudflare 2020 Internship
 By: Minh Quang Truong - mqt0312[@]gmail[.]com
+
+## 1. Description
+
+This implementation of ping can take in a site's hostname or IPv4 address. Currently IPv6 addresses are not supported.\
+This is a much more minimal and less powerful version of Linux's ping. You can manipulate the TTL (time-to-live) value or send only a certain number of ping packet.
 
 ## 1. Compile
 
-Compile ping.c with: gcc -o ping ping.c
-Alternatively, run make with the provided Makefile
+Compile ping.c with: 
+
+    $ gcc -o ping ping.c
+Alternatively, run
+
+    $ make
+with the provided Makefile
 
 ## 2. Run
 
-ping takes in a hostname or an IPv4 address and two optional arguments:
-  -t=TTL: Set TTL to a specific value
+ping takes in a hostname or an IPv4 address and two optional arguments:\
+  -t=TTL: Set TTL to a specific value\
   -n=PACKET_LIMIT: Send only PACKET_LIMIT ping packet. If not specified, ping will send until termination.
 
 You can terminate ping with CTRL-C or send SIGINT to the process. The report will be printed upon termination
