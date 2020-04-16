@@ -18,12 +18,19 @@ Alternatively, run
 with the provided Makefile
 
 ## 2. Run
+    Usage: ping <destination> [-t TTL] [-n number of packet]
+	       -t=TTL: Set TTL to a specific value (default 64)
+	       -n=PACKET_LIMIT: Send only a PACKET_LIMIT number of packet. 
+	                        If not specified, ping will send until termination
 
-ping takes in a hostname or an IPv4 address and two optional arguments:\
-  -t=TTL: Set TTL to a specific value\
-  -n=PACKET_LIMIT: Send only PACKET_LIMIT ping packet. If not specified, ping will send until termination.
 
-You can terminate ping with CTRL-C or send SIGINT to the process. The report will be printed upon termination
+
+Note:
+<ol start="1">
+<li>As mentioned, you can only either enter a hostname or an IPv4 address as destination. IPv6 address is not supported</li>
+<li>You can terminate ping with CTRL-C or send SIGINT to the process. The report will be printed upon termination</li>
+</ol>
+
 
 ## 3. Example:
 
